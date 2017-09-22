@@ -3,21 +3,25 @@ li {
 }
 element.style {
 }
+.light-grey, .hover-light-grey:hover,{
+    color: #000;
+    background-color: #f1f1f1;
+}
 (index):9
 body, h1, h2, h3, h4, h5 {
     font-family: "Raleway", sans-serif;
 }
-w3.css:30
+.css:30
 h1, h2, h3, h4, h5, h6 {
     font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
     margin: 10px 0;
 }
-w3.css:29
+.css:29
 h1 {
     font-size: 36px;
 }
-w3.css:2
+.css:2
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -32,34 +36,31 @@ h1 {
     font-weight: bold;
 }
 Inherited from header.w3-container.w3-center.w3-padding-32
-w3.css:130
-.w3-center {
+.css:130
+.center {
     text-align: center!important;
 }
-Inherited from body.w3-light-grey
-w3.css:172
-.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+Inherited from body.light-grey
+.css:172
+.light-grey, .hover-light-grey:hover,{
     color: #000!important;
     background-color: #f1f1f1!important;
 }
-(index):9
-body, h1, h2, h3, h4, h5 {
-    font-family: "Raleway", sans-serif;
-}
-w3.css:28
+
+.css:28
 html, body {
     font-family: Verdana,sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
 Inherited from html
-w3.css:28
+.css:28
 html, body {
     font-family: Verdana,sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
-w3.css:4
+.css:4
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -70,7 +71,7 @@ w3.css:2
     box-sizing: inherit;
 }
 Pseudo ::after element
-w3.css:2
+.css:2
 *, *:before, *:after {
     box-sizing: inherit;
 }

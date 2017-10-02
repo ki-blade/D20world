@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>D20 World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+    <!--Horizontal Nav -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">D&D SRD</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pathfinder SRD</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Homebrew</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">D&D SRD</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Pathfinder SRD</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Homebrew</a>
+  </div>
+</div>
+<!--Horizontal Nav -->
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>D20<br>World</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Articles</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reviews</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shop</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>D20 World</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div id="d20Logo"><a href="http://www.wizards.com/d20"><img src="/images/d20logo.gif" alt="d20 System Logo" width="74" height="64" /></a></div>
+<div id="ENnie"><a href="http://www.enworld.org/ennies/"><img src="/images/ENnieGold.png" alt="2005 Gold ENnie - Best Fan Site" width="75" height="75" title="2005 Gold ENnie - Best Fan Site" /></a></div>
+<div><img src="/images/logo.png" alt="The Hypertext d20 SRD - the ultimate d20 system reference" width="344" height="78" /></div>
+
+<!--D&D 3.5 SRD-->
+<div>
+<h1 style="display:none">D20 world D&D 3.5 SRD<sup></sup></h1>
+<h2 style="display:none">The ultimate d20 System reference</h2>
+
+<div class="column" style="width:33%">
+	<h2 style="margin-top:0px">Core Rules</h2>
+	<ul>
+		<li><a href="/indexes/basicsRacesDescription.htm">Basics, Races, &amp; Description</a></li>
+		<li><a href="/indexes/classes.htm">Classes</a></li>
+		<li><a href="/indexes/skills.htm">Skills</a></li>
+		<li><a href="/indexes/feats.htm">Feats</a></li>
+	</ul>
+	<hr />
+	<ul>
+		<li><a href="/indexes/magicItems.htm">Magic Items</a></li>
+		<li><a href="/indexes/equipment.htm">Equipment &amp; Special Materials</a></li>
+	</ul>
+	<hr />
+	<ul>
+		<li><a href="/indexes/combat.htm">Combat</a></li>
+		<li><a href="/indexes/conditions.htm">Condition Summary</a></li>
+		<li><a href="/indexes/specialAbilities.htm">Special Abilities</a></li>
+	</ul>
+	<hr />
+	<ul>
+		<li><a href="/indexes/magicOverview.htm">Magic Overview</a></li>
+		<li><a href="/indexes/spellLists.htm">Spell Lists &amp; Domains</a></li>
+		<li><a href="/indexes/spells.htm">Spells</a></li>
+	</ul>
+	<hr />
+	<ul>
+		<li><a href="/indexes/monsters.htm">Monsters</a></li>
+		<li><a href="/indexes/typesSubtypes.htm">Types &amp; Subtypes</a></li>
+		<li><a href="/indexes/improvingMonsters.htm">Improving Monsters</a></li>
+		<li><a href="/indexes/monsterFeats.htm">Monster Feats</a></li>
+		<li><a href="/indexes/monstersAsRaces.htm">Monsters as Races</a></li>
+	</ul>
+	<hr />
+	<ul>
+		<li><a href="/indexes/carryingMovementExploration.htm">Carrying, Movement, &amp; Exploration</a></li>
+		<li><a href="/indexes/wildernessWeatherEnvironment.htm">Surroundings, Weather &amp; Environment</a></li>
+		<li><a href="/indexes/traps.htm">Traps</a></li>
+		<li><a href="/indexes/treasure.htm">Treasure</a></li>
+		<li><a href="/indexes/planes.htm">Planes</a></li>
+	</ul>
+</div>
+
+<div class="column" style="width:36%">
+	<h2 style="margin-top:0px">Epic Rules</h2>
+	<ul>
+		<li><a href="/indexes/epicBasicsAndClasses.htm">Epic Basics &amp; Classes</a></li>
+		<li><a href="/indexes/epicSkills.htm">Epic Skills</a></li>
+		<li><a href="/indexes/epicFeats.htm">Epic Feats</a></li>
+		<li><a href="/indexes/epicSpells.htm">Epic Spells &amp; Psionic Powers</a></li>
+		<li><a href="/indexes/epicMagicItems.htm">Epic Magic Items</a></li>
+		<li><a href="/indexes/epicMonstersAndObstacles.htm">Epic Monsters &amp; Obstacles</a></li>
+	</ul>
+
+	<h2 style="margin-bottom:0px">Psionic Rules</h2>
+	<ul>
+		<li><a href="/indexes/psionicRacesClassesSkillsSpells.htm">Races, Classes, Skills, &amp; Spells</a></li>
+		<li><a href="/indexes/psionicFeats.htm">Psionic Feats</a></li>
+		<li><a href="/indexes/psionicPowersOverview.htm">Psionic Powers Overview</a></li>
+		<li><a href="/indexes/psionicPowerList.htm">Power List</a></li>
+		<li><a href="/indexes/psionicPowers.htm">Psionic Powers</a></li>
+		<li><a href="/indexes/psionicItems.htm">Psionic Items</a></li>
+		<li><a href="/indexes/psionicMonsters.htm">Psionic Monsters</a></li>
+	</ul>
+
+	<h2 style="margin-bottom:0px">Divine Rules</h2>
+	<ul>
+		<li><a href="/indexes/divineRanksPowers.htm">Divine Ranks &amp; Powers</a></li>
+		<li><a href="/indexes/divineAbilitiesFeats.htm">Divine Abilities &amp; Feats</a></li>
+		<li><a href="/indexes/divineMinionsDomainsSpells.htm">Additional Domains, Spells, &amp; Divine Minions</a></li>
+	</ul>
+
+	<h2 style="margin-bottom:0px">Variant Rules</h2>
+	<p class="subHeader">open content from <a href="http://www.wizards.com/default.asp?x=products/dndacc/881560000">Unearthed Arcana</a></p>
+	<ul>
+		<li><a href="/indexes/variantRaces.htm">Races</a></li>
+		<li><a href="/indexes/variantClasses.htm">Classes</a></li>
+		<li><a href="/indexes/variantBuildingCharacters.htm">Building Characters</a></li>
+		<li><a href="/indexes/variantAdventuring.htm">Adventuring</a></li>
+		<li><a href="/indexes/variantMagic.htm">Magic</a></li>
+		<li><a href="/indexes/variantCampaigns.htm">Campaigns</a></li>
+	</ul>
+</div>
+
+<div class="column" style="width:31%">
+	<h2 style="margin-top:0px">Site Search &amp; Info</h2>
+	<ul>
+		<li style="padding-bottom:3px">
+
+      <div id="homeSearch">
+        <script>
+          (function() {
+            var cx = '017876066608833108912:gg5d1fu6rlg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:searchbox-only></gcse:searchbox-only>
+      </div>
+		</li>
+		<li><a href="/about.htm">About This Site</a></li>
+		<li><a href="/faq.htm">Frequently Asked Questions</a></li>
+		<li><a href="/changes.htm">Changes from the Official d20 SRD</a></li>
+	</ul>
+	<h2 style="margin-bottom:0px">Game Master Tools</h2>
+	<h3 style="margin-bottom:0px">General Tools</h3>
+	<ul>
+		<li><a href="/fantasy/name/">Fantasy Name Generator</a></li>
+		<li><a href="/fantasy/world/">Fantasy World Generator</a></li>
+		<li><a href="/fantasy/adventure/">Fantasy Adventure Generator</a></li>
+		<li><a href="/fantasy/inn/">Fantasy Inn Generator</a></li>
+	</ul>
+	<h3 style="margin-bottom:0px">d20 Tools</h3>
+	<ul>
+		<li><a href="/extras/d20dicebag">d20 Dice Bag</a></li>
+		<li><a href="/extras/d20encountercalculator">d20 Encounter Calculator</a></li>
+		<li><a href="/extras/d20monsterfilter">d20 Monster Filter</a></li>
+		<li><a href="/extras/d20spellfilter">d20 Spell Filter</a></li>
+		<li><a href="/d20/random/">d20 NPCs/Items/Traps Generator</a></li>
+		<li><a href="/d20/demographics/">d20 Demographics Calculator</a></li>
+		<li><a href="/d20/dungeon/">d20 Dungeon Generator</a></li>
+		<li><a href="/d20/encounter/">d20 Random Encounter Generator</a></li>
+		<li><a href="/d20/magic/shop.html">d20 Magic Shop Generator</a></li>
+		<li><a href="/d20/treasure/">d20 Treasure Generator</a></li>
+	</ul>
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+        popupWindow = window.open(
+                url,'popUpWindow','height=750,width=750,left=10,top=10,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+<a href="http://www.lounge.belloflostsouls.net/forumdisplay.php?175-D20srd-org-General-Discussion"><h2 style="margin-bottom:0px">Community Forum</a></h2>
+        <ul>
+                <li style="padding-bottom:3px">
+        </ul>
+<a href="https://dnd-wiki.org"><h2>D&D Wiki</a><font color="red"><b>  NEW!</b></font></h2>
+</div>
+
+<div class="footer">
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
